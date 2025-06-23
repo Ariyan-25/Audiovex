@@ -1,0 +1,108 @@
+/* body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #2e4053 , #1f1f1f);
+  color: #f0f0f0;
+  min-height: 100vh;
+  margin: 0;
+  animation: fadeIn 1s ease;
+} */
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(270deg, #2e4053, #1f1f1f, #ff66a3,#1f1f1f,#2e4053);
+  background-size: 600% 600%;
+  animation: backgroundShift 20s ease infinite;
+  margin: 0;
+  padding: 0;
+}
+@keyframes backgroundShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 48px;
+  color: white;
+  text-shadow: 0 0 10px #ff66a3, 0 0 20px #ff66a3;
+}
+
+.piano {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 50px;
+}
+
+.piano button {
+  background: linear-gradient(to bottom, #fff, #ccc);
+  color: black;
+  border: 2px solid #999;
+  border-radius: 8px;
+  padding: 40px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s, box-shadow 0.1s;
+  box-shadow: 2px 2px 5px #000;
+}
+
+.piano button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px #ff66a3;
+}
+
+.piano button.active {
+  background-color: #ff66a3;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #ff66a3;
+}
+
+.runaway-wrapper {
+  margin-top: 40px;
+}
+
+.key {
+  display: inline-block;
+  width: 240px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  font-weight: bold;
+  border-radius: 8px;
+  background: #ffffff;
+  border: 2px solid #333;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.key.pressed {
+  background-color: #ff66a3;
+  box-shadow: 0 0 12px #ff66a3;
+  color: white;
+  transform: scale(0.98);
+}
+
+.special-key {
+  color: #ff66a3;
+  background-color: black;
+  font-size: 18px;
+}
+
+footer {
+  margin-top: 315px;
+  font-size: 14px;
+  color: #777;
+}

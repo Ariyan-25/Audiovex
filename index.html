@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Audiovex</title>
+  <link rel="icon" type="image/x-icon" href="keyboard.png">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Audiovex 🎹</h1>
+
+  <div class="piano">
+    <button data-key="A">A</button>
+    <button data-key="U">U</button>
+    <button data-key="D">D</button>
+    <button data-key="I">I</button>
+    <button data-key="O">O</button>
+    <button data-key="V">V</button>
+    <button data-key="E">E</button>
+    <button data-key="X">X</button>
+  </div>
+
+ 
+  <div class="runaway-wrapper">
+    <div class="key special-key" id="runaway-key" data-key="runaway">
+      Runaway (R)
+    </div>
+  </div>
+
+  <!-- Audio Elements -->
+  <audio id="A" src="sounds/A.wav"></audio>
+  <audio id="U" src="sounds/C.wav"></audio>
+  <audio id="D" src="sounds/H.wav"></audio>
+  <audio id="I" src="sounds/B.wav"></audio>
+  <audio id="O" src="sounds/E.wav"></audio>
+  <audio id="V" src="sounds/T.wav"></audio>
+  <audio id="E" src="sounds/H.wav"></audio>
+  <audio id="X" src="sounds/E.wav"></audio>
+  <audio id="runaway" src="sounds/runaway.wav"></audio>
+
+  <footer>Just a fun prototype.</footer>
+  <script src="script.js"></script>
+</body>
+</html>
