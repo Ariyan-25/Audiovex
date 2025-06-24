@@ -5,30 +5,40 @@ This is just a fun prototype built to explore interactive audio with keyboard ev
 
 ---
 
-## ✨ Features
+## Features
 - Play piano notes via keyboard
 - Highlights keys when pressed
 - Animated background and responsive UI
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - HTML
 - CSS (with animation)
 - Vanilla JavaScript
 
 ---
 
-## 🚀 How to Run
+## Screenshots
+
+### Audiovex Demo
+![1](screenshots/interface.png)
+
+![2](screenshots/key_pressed.png)
+
+
+---
+
+## How to Run
 1. Clone or download this repository.
 2. Ensure the `sounds/` folder contains the required audio files.
 3. Open `index.html` in any modern web browser.
 
-✅ No installation or build tools needed — runs entirely in the browser!
+No installation or build tools needed — runs entirely in the browser!
 
 ---
 
-## 💡 Ideas to Explore
+## Ideas to Explore
 - Add more musical keys
 - Visualize sound waves or frequencies
 - Touch/mouse support
