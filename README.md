@@ -19,16 +19,6 @@ This is just a fun prototype built to explore interactive audio with keyboard ev
 
 ---
 
-## Screenshots
-
-### Audiovex Demo
-![1](screenshots/interface.png)
-
-![2](screenshots/key_pressed.png)
-
-
----
-
 ## How to Run
 1. Clone or download this repository.
 2. Ensure the `sounds/` folder contains the required audio files.
